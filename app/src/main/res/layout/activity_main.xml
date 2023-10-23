@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/FragmentMerah"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/toolbar"
+            android:text="KULINER"/>
+
+        <Button
+        android:id="@+id/FragmentBiru"
+        android:layout_width="185dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="50dp"
+        android:text="TL"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <Button
+        android:id="@+id/PPLG"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TO"
+        android:text="PPLG"/>
+
+    <Button
+        android:id="@+id/TO"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/FragmentMerah"
+        android:text="TO"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Busana"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:text="BUSANA"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/FragmentBiru"
+        tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="7"
+            android:shadowDy="7"
+            android:shadowRadius="7"
+            android:text="JobSheet 14"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/FragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPLG"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
